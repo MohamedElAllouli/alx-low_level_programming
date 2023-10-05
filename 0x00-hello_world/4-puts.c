@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main
- * reurn 0 if success
+ * main function 
+ * main reurn: 0 if success
  */
 int main(void)
 {
