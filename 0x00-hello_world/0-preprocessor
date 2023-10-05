@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc CFILE=mai.c -o C
+gcc -E | $CFILE -o C
