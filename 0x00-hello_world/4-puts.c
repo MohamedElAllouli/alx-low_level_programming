@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - using put function 
+ *main - using put function
  *
  *Description: This is the main function where the program execution starts.
  *
