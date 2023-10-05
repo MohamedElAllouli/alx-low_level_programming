@@ -4,7 +4,7 @@
  *
  * Discription: main function
  *
- * return: 0 on sucsses
+ * Return: 0 on sucsses
  */
 int main(void)
 {
