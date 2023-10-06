@@ -16,11 +16,11 @@ int main(void)
 		putchar(alphabet);
 		alphabet++;
 	}
-	   while (alphabet1 <= 'Z')
-	   {
-		   putchar(alphabet1);
-		   alphabet1++;
-								           }
+	while (alphabet1 <= 'Z')
+	{
+		putchar(alphabet1);
+		alphabet1++;
+       	}
 	printf("\n");
 	return (0);
 }
