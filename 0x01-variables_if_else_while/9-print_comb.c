@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main -conbination 
+ *main -conbination
  *
  *Description: main function
  *
@@ -9,6 +9,7 @@
 int main(void)
 {
 	int i;
+
 	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
