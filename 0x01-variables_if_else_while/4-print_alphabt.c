@@ -11,7 +11,7 @@ int main(void)
 	char alphabet = 'a';
 
 	while (alphabet <= 'z')
-	{ 
+	{
 		if (alphabet == 'q' || alphabet == 'e')
 		{
 			alphabet++;
@@ -19,6 +19,6 @@ int main(void)
 		putchar(alphabet);
 		alphabet++;
 	}
-		printf("\n");
-	       	return (0);
+	printf("\n");
+	return (0);
 }
