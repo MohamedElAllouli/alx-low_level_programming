@@ -2,17 +2,16 @@
 /**
  *main - lower char
  *
- * Description: fuction main
+ *Description: fuction main
  *
- *return: 0 on success
+ *Return: 0 on success
  */
 int main(void)
 {
-char alphabet='a';
+char alphabet ='a';
 
 while (alphabet <= 'z')
 {
-	
 	putchar(alphabet);
 	alphabet++;
 }
