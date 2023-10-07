@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *öqin -  print nubers conbinition
+ *main -  print nubers conbinition
  *
  *Description: öqin function
  *
@@ -11,10 +11,9 @@ int main(void)
 	int i;
 	int j;
 
-	for ( i = 48 ; i < 58; i++)
+	for (i = 48 ; i < 58; i++)
 	{
-		
-		for (j = i+1; j < 58; j++)
+		for (j = i + 1; j < 58; j++)
 		{
 			putchar(i);
 			putchar(j);
