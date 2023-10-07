@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - numbers 
+ *main - numbers
  *
  *Description: main function
  *
@@ -10,31 +10,23 @@ int main(void)
 {
 	int i;
 	int j;
-	int k;
-	int h;
 
-	for (i = 48; i < 58; i++)
+	for (i = 0; i < 99; i++)
 	{
-		for (j = 48; j < 58; j++)
-		{
-			for (k = 48; k < 58; k++)
+		for (j = i + 1; j < 100; j++)
+		{ 
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+			if (i == 98 && j == 99)
 			{
-				for (h = 48; h < 58; h++)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(k);
-					putchar(h);
-					if (i < 57)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				continue;
 			}
+			putchar(',');
+			putchar(' ');
 		}
-
 	}
 	putchar('\n');
 	return (0);
