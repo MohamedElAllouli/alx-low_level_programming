@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _sign - get sign of nuber
+ *print_sign - get sign of nuber
  * @n: The character to print
  *
  * Return: 1 if positve , 0 if null and -1 if negative
