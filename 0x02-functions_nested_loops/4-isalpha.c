@@ -4,7 +4,6 @@
  * @c: The character to print
  *
  * Return: On success 1 or 0 in atherwise
- * 
  */
 int _isalpha(int c)
 {
