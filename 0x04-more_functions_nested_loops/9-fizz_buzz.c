@@ -1,9 +1,8 @@
-#include "main.h"
 #include<stdio.h>
 /**
  * main - Fizz-Buzz test
  *
- * Return: 1 on success
+ *Return: 1 on success
  */
 int main(void)
 {
@@ -27,7 +26,8 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		printf(" ");
+		if( i < 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (1);
