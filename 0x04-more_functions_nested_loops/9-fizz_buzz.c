@@ -3,7 +3,7 @@
 /**
  * main - Fizz-Buzz test
  *
- *Return: 1 on success
+ * Return: 0 on success
  */
 int main(void)
 {
@@ -33,5 +33,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	return (1);
+	return (0);
 }
