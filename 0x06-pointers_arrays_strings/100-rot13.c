@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * rot13 - rot 13
  * @s: string
@@ -11,6 +10,7 @@ char *rot13(char *s)
 	int j;
 	char ro1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefjhijklmnopqrstuvwxyz";
 	char ro2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
 	while (s[i] != '\0')
 	{
 		for (j = 0; j < 52; j++)
