@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _memset - fills memory with constante byte
- * @s: string 
- * @: value
+ * @s: string
+ * @b: value
  * @n: number of byte
  * Return: poiter of string
  */
