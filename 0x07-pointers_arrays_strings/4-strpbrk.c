@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 /**
  * _strpbrk - searche a string
  * @s: string source
