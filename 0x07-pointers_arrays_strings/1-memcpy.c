@@ -16,7 +16,7 @@ int n)
 	{
 		dest[i] = src[i];
 		i++;
-		d--;
+		n--;
 	}
 	return (dest);
 }
