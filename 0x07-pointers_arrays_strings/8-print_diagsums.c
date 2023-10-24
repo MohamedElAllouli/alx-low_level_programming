@@ -1,6 +1,5 @@
 #include "main.h"
-#include<stdio.h>
-
+#include <stdio.h>
 /**
  * print_diagsums - sum of diagnals
  * @a: arry
@@ -18,7 +17,7 @@ void print_diagsums(int *a, int size)
 	}
 	for (i = size - 1; i >= 0; i--)
 	{
-		s2 = s2 + a[i * size + (size -i - 1)];
+		s2 = s2 + a[i * size + (size - i - 1)];
 	}
 	printf("%d, %d\n", s1, s2);
 }
