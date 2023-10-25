@@ -3,7 +3,7 @@
  * _pow_recursion - pow of number
  * @x: number
  * @y: pow
- * Return : pow value
+ * Return: pow value
  */
 int _pow_recursion(int x, int y)
 {
