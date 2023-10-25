@@ -8,7 +8,7 @@ include "main.h"
  */
 int main(void)
 {
-    int n;
+    int n = 0;
 
     n = _strlen_recursion("Corbin Coleman");
     printf("%d\n", n);
