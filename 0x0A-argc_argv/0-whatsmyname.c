@@ -4,7 +4,7 @@
  * main - main function
  * @argv: content of commande line
  * @argc: argc
- * Return: 0 olwayse in success
+ * Return: argc olwayse in success
  */
 int main(int argc, char *argv[])
 {
