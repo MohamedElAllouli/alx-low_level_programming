@@ -4,10 +4,10 @@
  * main - main function
  * @argv: content of commande line
  * @argc: argc
- * Return: argc olwayse in success
+ * Return: 0 olwayse in success
  */
-int main(int argc_attribute__((unused)), char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
 	printf("%s\n", *argv);
-	return (argc);
+	return (0);
 }
