@@ -6,7 +6,7 @@
  * @argc: argc
  * Return: argc olwayse in success
  */
-int main(int argc, char *argv[])
+int main(int argc_attribute__((unused)), char *argv[])
 {
 	printf("%s\n", *argv);
 	return (argc);
