@@ -4,10 +4,10 @@
 /**
  * min - min of tow numers
  * @a: first numeb
- * @b. second numebr
+ * @b:second numebr
  * Return: numebr
  */
-unsigned int min(unsigned int a,unsigned int b)
+unsigned int min(unsigned int a, unsigned int b)
 {
 	if (a > b)
 		return (b);
