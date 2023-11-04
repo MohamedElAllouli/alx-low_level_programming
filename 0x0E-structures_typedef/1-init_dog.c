@@ -10,10 +10,11 @@
  */
 void init_dog(struct dog *d, char *n, float a, char *o)
 {
-	if (n != NULL && o != NULL)
+	if (d == NULL)
 	{
+		d = malloc(sizeof(struct dog));
+	}
 		d->name = n;
 		d->age = a;
 		d->owner = o;
-	}
 }
