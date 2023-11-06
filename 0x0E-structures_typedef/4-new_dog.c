@@ -35,7 +35,7 @@ char *_strcpy(char *d, char *s)
 		d[i] = s[i];
 	}
 
-	dest[i++] = '\0';
+	d[i++] = '\0';
 
 	return (d);
 }
