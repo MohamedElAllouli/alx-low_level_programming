@@ -15,9 +15,7 @@ void print_numbers(const char *s, const unsigned int n, ...)
 	int tmp;
 	char *p;
 
-	if (n == 0)
-		return;
-	if (s == NULL)
+	if (s == NULL || *s == 0)
 		p = "";
 	else
 		p = (char *) s;
