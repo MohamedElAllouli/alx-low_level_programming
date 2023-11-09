@@ -28,7 +28,12 @@ void print_numbers(const char *s, const unsigned int n, ...)
 
 		}
 		else
+		{
+			s = "";
 			printf("%d", tmp);
+			if (i != n - 1)
+				printf("%s", s);
+		}
 	}
 	va_end(liste);
 	printf("\n");
