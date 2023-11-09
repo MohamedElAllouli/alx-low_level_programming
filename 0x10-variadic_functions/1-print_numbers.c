@@ -28,7 +28,7 @@ void print_numbers(const char *s, const unsigned int n, ...)
 
 		}
 		else
-			printf("%d", tmp);
+			printf("%d ", tmp);
 	}
 	printf("\n");
 }
