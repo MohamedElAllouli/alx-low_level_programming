@@ -13,28 +13,22 @@ void print_numbers(const char *s, const unsigned int n, ...)
 	unsigned int i;
 	va_list liste;
 	int tmp;
+	char *p;
 
 	if (n == 0)
 		return;
+	if (s == NULL)
+		p = "";
+	else
+		p = (char *) s;
 	va_start(liste, n);
 	for (i = 0; i < n; i++)
 	{
 		tmp = va_arg(liste, int);
-		if (s != NULL)
-		{
-			s = (char *) s;
-			printf("%d", tmp);
-			if (i != n - 1)
-				printf("%s", s);
+		printf("%d", tmp);
+		if (i != n - 1)
+			printf("%s", p);
 
-		}
-		else
-		{
-			s = "";
-			printf("%d", tmp);
-			if (i != n - 1)
-				printf("%s", s);
-		}
 	}
 	va_end(liste);
 	printf("\n");
