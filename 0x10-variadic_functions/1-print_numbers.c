@@ -32,6 +32,6 @@ void print_numbers(const char *s, const unsigned int n, ...)
 		tmp = va_arg(liste, int);
 		printf("%s%d", p, tmp);
 	}
-	va_end(liste);
 	printf("\n");
+	va_end(liste);
 }
