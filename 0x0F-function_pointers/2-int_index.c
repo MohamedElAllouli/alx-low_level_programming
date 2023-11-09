@@ -4,20 +4,20 @@
 
 /**
  * int_index - index of element
- * @a: array
- * @s: size
+ * @array: array
+ * @size: size
  * @cmp: function
  * Return: -1 or index
  */
-int int_index(int *a, int s; int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (a == NULL || cmp == NULL || s <= 0)
+	if (array == NULL || cmp == NULL || size <= 0)
 		return (-1);
-	for (i = 0; i < s; i++)
+	for (i = 0; i < size; i++)
 	{
-		if (cmp(a[i]) != 0)
+		if (cmp(array[i]) != 0)
 			return (i);
 	}
 	return (-1);
