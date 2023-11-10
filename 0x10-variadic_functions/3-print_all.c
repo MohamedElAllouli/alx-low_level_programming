@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * print_strings - print string
+ * print_all - print all format
  * @f: format
  * Return: void
  */
