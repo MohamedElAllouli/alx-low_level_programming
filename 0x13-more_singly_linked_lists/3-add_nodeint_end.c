@@ -4,7 +4,7 @@
 /**
  * add_nodeint_end - add new nod at th head oh list
  * @head: head of list
- * @str: nuber
+ * @n: number
  * Return: list
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
