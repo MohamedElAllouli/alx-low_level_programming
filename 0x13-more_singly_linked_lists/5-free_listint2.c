@@ -1,11 +1,11 @@
 #include "lists.h"
 #include<stdlib.h>
 /**
- * free_listint - free list of int
+ * free_listint2 - free list of int
  * @head: head of list
  * Return: void
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t *head)
 {
 	listint_t *tmp = NULL;
 
