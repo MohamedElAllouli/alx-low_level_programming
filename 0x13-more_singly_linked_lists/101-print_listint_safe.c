@@ -1,71 +1,56 @@
 #include "lists.h"
 #include<stdio.h>
 #include<stdlib.h>
+
 /**
- * print_listint_safe - prints all the elements of a linked list
- * @head: head of the list
- *
- * Return: the number of nodes
- */
+* print_listint_safe - prints a list but safely
+* @head: the head node.
+* Return: the count number.
+*/
+
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *cursor = head;
-	listint_t **ptrs;
-	unsigned int list_len = listint_len(head);
 	size_t count = 0;
+	size_t index = 0;
+	listint_t const **array;/* A */
 
-	ptrs = malloc(sizeof(listint_t) * list_len);
-	if (ptrs == NULL)
+	array = malloc(sizeof(listint_t *) * 1024);
+	if (!array)
 		exit(98);
-	while (cursor == 0)
+	unsigned int i = 0;
+	unsigned int flag = 0;
+
+	while (head != NULL)/* B */
 	{
-		if (check_ptr(cursor, ptrs, list_len) == 0)
+		for (i = 0; i < count; i++)/* C*/
 		{
-			printf("[%p] %d\n", (void *)cursor, cursor->n);
+			if (head == array[i])/* D */
+			{
+				flag = 1;
+				index = i;
+				break;
+			}
+			else
+				flag = 0;
 		}
-		else
-		{
-			printf("[%p] %d\n", (void *)cursor, cursor->n);
-		}
-		count += 1;
-		cursor = cursor->next;
+
+		if (flag == 1)/* E */
+			break;
+		array[count] = head;
+		head = head->next;
+		count++;
 	}
-	return (count);
-}
 
-/**
- * listint_len - counts the number of nodes in a linked list
- * @h: head of the list
- *
- * Return: the number of elements
- */
-size_t listint_len(const listint_t *h)
-{
-	const listint_t *cursor = h;
-	size_t count = 0;
-
-	while (cursor != NULL)
+	i = 0;
+	while (i < count)/* F */
 	{
-		count += 1;
-		cursor = cursor->next;
+		printf("[%p] %d\n", (void *)array[i], array[i]->n);
+		i++;
 	}
-	return (count);
-}
-
-/**
- * check_ptr - checks if a pointer is in an array
- * @ptr: pointer to be checked
- * @array: array to be checked in
- * @size: size of the array
- *
- * Return: 1 on success, 0 on fail
- */
-int check_ptr(const listint_t *ptr, listint_t **array, unsigned int size)
-{
-	while (size-- >= 0)
+	if (flag == 1)/* G */
 	{
-		if (ptr == array[size])
-			return (1);
+		printf("-> [%p] %d\n", (void *)array[index], array[index]->n);
 	}
-	return (0);
+	free(array);
+	return (count);
 }
