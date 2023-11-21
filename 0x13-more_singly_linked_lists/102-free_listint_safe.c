@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * listint_count - Counts the number of unique nodes
@@ -17,7 +18,7 @@ size_t listint_count(listint_t *head)
 	h = (head->next)->next;
 	while (h)
 	{
-		if (t == hare)
+		if (t == h)
 		{
 			t = head;
 			while (t != h)
