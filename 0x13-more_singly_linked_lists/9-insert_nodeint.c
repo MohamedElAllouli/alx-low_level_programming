@@ -2,7 +2,7 @@
 #include <string.h>
 #include<stdlib.h>
 /**
- * insert_nodeint_at - add new nod at th head oh list
+ * insert_nodeint_at_index - add new nod at th head oh list
  * @head: head of list
  * @n: number
  * @idx: index
