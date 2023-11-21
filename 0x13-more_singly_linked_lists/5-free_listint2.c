@@ -5,14 +5,14 @@
  * @head: head of list
  * Return: void
  */
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *tmp = NULL;
 
-	while (head)
+	while (*head)
 	{
-		tmp = head;
-		head = head->next;
+		tmp = *head;
+		*head = *head->next;
 		free(tmp);
 	}
 	head = NULL;
