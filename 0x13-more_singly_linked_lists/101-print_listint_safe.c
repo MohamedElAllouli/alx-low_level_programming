@@ -18,19 +18,19 @@ size_t count_listint_len(const listint_t *head)
 
 	t = head->next;
 	h = (head->next)->next;
-	while (hare)
+	while (h)
 	{
-		if (t == hare)
+		if (t == h)
 		{
-			t = head;
-			while (t != hare)
+			t = h;
+			while (t != h)
 			{
 				n++;
 				t = t->next;
 				h = h->next;
 			}
 			t = t->next;
-			while (t != hare)
+			while (t != h)
 			{
 				n++;
 				t = t->next;
@@ -47,12 +47,12 @@ size_t count_listint_len(const listint_t *head)
 }
 
 /**
- * safe_print_listint - Print list
+ * print_listint_safe - Print list
  * @head: head of the list
  *
  * Return: number of liste
  */
-size_t safe_print_listint(const listint_t *head)
+size_t print_listint_safe(const listint_t *head)
 {
 	size_t n, i = 0;
 
