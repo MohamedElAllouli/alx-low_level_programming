@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-
+#include<string.h>
 /**
  * hash_table_get - get avlue of a kay
  * @ht: hash table
