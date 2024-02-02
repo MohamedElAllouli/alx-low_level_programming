@@ -26,7 +26,7 @@ void hash_table_print(const hash_table_t *ht)
 				if (temp != NULL)
 					printf(", ");
 			}
-			lag = 1;
+			flag = 1;
 		}
 	}
 	printf("}\n");
